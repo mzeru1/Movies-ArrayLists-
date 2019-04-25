@@ -30,6 +30,7 @@ public class Main {
             more = scan.nextLine();
 
         }
+        // enhanced for loop.
         for (Movies mvi: CENIMA){
             System.out.println(mvi.display());
 //          System.out.println(mvi.getYear());

@@ -17,11 +17,12 @@ public class Movies {
     }
 
     public void setActor(String actor) {
+        actor.toUpperCase();
         this.actor = actor;
     }
 
     public String getActor() {
-        return actor;
+        return actor.toUpperCase();
     }
 
     public void setYear(int year) {
@@ -32,13 +33,13 @@ public class Movies {
         return year;
     }
 
-    public void printMovies(ArrayList list) {
-        ArrayList<String> movieList = new ArrayList<String>();
-        for (String movies : movieList) {
-            System.out.println(movies);
-        }
-    }
+//    public void printMovies(ArrayList list) {
+//        ArrayList<String> movieList = new ArrayList<String>();
+//        for (String movies : movieList) {
+//            System.out.println(movies);
+//        }
+//}
     public String display (){
-        return getTitle() + "\n " + getActor() + " \n" + getYear();
+        return getTitle() + "\n " + getActor() + "\n" + getYear();
     }
 }
